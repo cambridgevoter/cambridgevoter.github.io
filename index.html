@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cambridge Voter Guide 2015</title>
+
+  <style id="jsbin-css">
+  body {
+    margin: 10px;
+  }
+
+  .candidate-image {
+    cursor: move;
+    cursor: -webkit-grabbing;
+  }
+
+  .candidate-image img {
+    width: 100%;
+  }
+
+  .rank-caption {
+    text-align: center;
+    font-size: 90%;
+  }
+
+  .rank {
+    text-align: center;
+    font-weight: bold;
+    font-size: 250%;
+    color: #225;
+  }
+
+  .desc h2 {
+    margin-top: 0;
+  }
+
+  .desc {
+    font-size: 90%;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+  <!-- Latest Sortable -->
+  <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
+
+  <!-- List with handle -->
+<div class="container">
+
+  <div id="listWithHandle" class="list-group">
+    <div class="list-group-item row" id="mcgovern">
+      <div class="col-xs-2 candidate-image">
+        <img src="http://cambridgecivic.com/vote/images/mcgovern2015a-small.jpg">
+      </div>
+      <div class="col-xs-8 desc">
+        <h2>Marc McGovern</h2>
+
+        <p>I have been thoroughly impressed with Marc as I have seen him talk at Cambridge candidate events. The key thing I want to describe about him is his passionate reasonableness. When a candidate takes a position that's stupid, Marc will calmly but emphatically explain why it's stupid, who would be hurt by it, and the more reasonable thing he would do instead.</p>
+        <p>Marc is a supporter of raising the Cambridge minimum wage to $15 per hour, something that we need given the high cost of living here.</p>
+        <p>He advocates growth and density, but he's sure to clarify that <em>some</em> development is harmful -- particularly speculation that won't increase the number of livable places. He'll use zoning and ordinances not as a weapon against new development, but a way for the City to encourage the kind of development it wants, even when it's not the most profitable thing.</p>
+        <!--
+        <p>(It's worth noting that the city has signed up for a development master plan from the Boston city-planning think tank Utile, and <em>every</em> candidate is happy with Utile so far. It has the unanimous support of the current city council and all the challengers who have spoken about it. Development that benefits us requires careful planning, but be assured that we're getting the best planning money can buy.)</p> -->
+        <p><strong>Drag up if</strong> McGovern's passionate reasonableness makes you wish you could give someone a vote higher than #1.</p>
+        <p><strong>Drag down if</strong> you don't support the minimum wage increase.</p>
+      </div>
+      <div class="col-xs-2">
+        <div class="rank-caption">Rob's rank:</div>
+        <div class="rank">#1</div>
+      </div>
+    </div>
+
+    <div class="list-group-item row" id="cheung">
+      <div class="col-xs-2 candidate-image">
+        <img src="http://cambridgecivic.com/vote/images/cheung2011-small.jpg">
+      </div>
+      <div class="col-xs-8 desc">
+        <h2>Leland Cheung</h2>
+
+        <p>If you are a renter in Cambridge, or if you have friends who rent and you don't want them to have to move out of Cambridge the next time they move, you should support Leland Cheung, because he is the strongest advocate of your interests.</p>
+
+        <p>Cheung is a champion of new residential construction, to a greater extent than the rest of his slate. Whatever is on the table, Cheung will be pushing for zoning that allows additional height, additional density, and additional units set aside as affordable as part of the deal, because the housing crunch is a vast problem and we can't solve it by being timid. He'll compromise, but he'll be sure to establish what we want first.</p>
+
+        <p>I have heard people shouting at Cheung at campaign events, "Why are you building luxury housing?", as if he's the one making it expensive. New housing in Cambridge is so valuable and so expensive because there isn't enough of it. Its price is a sign that we're filling demand and that there's a long way to go. We need higher density in appropriate places, before <em>all</em> housing turns into luxury housing and the soul of the city disappears.</p>
+
+        <p>Not all of Cheung's platform is about building. In his time on the council, he's pushed for the expansion of Zipcar and the introduction of Hubway into the city. He also aims to make the government more accessible through information technology, although so far, useful improvements in the city's IT have been slow to appear.</p>
+
+        <p><strong>Drag up if</strong> you care about the city's information technology and you think Cheung will finally make it work.</p>
+
+        <p><strong>Drag down if</strong> towers in Kendall Square make you uncomfortable.</p>
+
+      </div>
+      <div class="col-xs-2">
+        <div class="rank-caption">Rob's rank:</div>
+        <div class="rank">#2</div>
+      </div>
+    </div>
+
+    <div class="list-group-item row">
+      <div class="col-xs-2 candidate-image">
+        <img src="http://cambridgecivic.com/vote/images/mcgovern2015a-small.jpg">
+      </div>
+      <div class="col-xs-8 desc">
+        <h2>Candidate name</h2>
+      </div>
+      <div class="col-xs-2">
+        <div class="rank-caption">Rob's rank:</div>
+        <div class="rank">#?</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script id="jsbin-javascript">
+// List with handle
+Sortable.create(listWithHandle, {
+  handle: '.candidate-image',
+  animation: 150
+});
+</script>
+</body>
+</html>
