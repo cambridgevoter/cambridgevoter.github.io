@@ -18,6 +18,35 @@
     width: 100%;
   }
 
+  @media print {
+    .candidate-image img {
+      height: 30px;
+      width: auto;
+    }
+
+    .list-group-item {
+      padding-bottom: 0 !important;
+      padding-top: 4px !important;
+    }
+
+    .desc p, .desc blockquote {
+      display: none;
+    }
+
+    .desc h2 {
+      font-size: 20px;
+      margin-bottom: none;
+    }
+
+    .rank {
+      font-size: 15px !important;
+    }
+
+    .nope, .intro, .footer {
+      display: none;
+    }
+  }
+
   .rank-caption {
     text-align: center;
     font-size: 90%;
@@ -26,7 +55,7 @@
   .rank {
     text-align: center;
     font-weight: bold;
-    font-size: 250%;
+    font-size: 30px;
     color: #225;
   }
 
@@ -39,12 +68,12 @@
   }
 
   .main-heading h2 {
-    font-size: 2rem;
+    font-size: 20px;
     margin-bottom: 0;
   }
 
   .main-heading h1 {
-    font-size: 4rem;
+    font-size: 40px;
     margin-top: 0;
   }
   </style>
@@ -62,9 +91,15 @@
 <hgroup class="main-heading">
   <h2>Cambridge City Council 2015</h2>
   <h1>Choose Your Own Voter Guide</h1>
+  <h4>by <a href="http://twitter.com/r_speer/">Rob Speer</a></h4>
 </hgroup>
 
 <div class="container">
+  <div class="intro">
+    <p>For the last few election cycles, I've sent around a page with rankings of the Cambridge City Council candidates, with descriptions of their positions on key issues and my perceptions of them from campaign events.</p>
+    <p>In 2013, one friend of mine told me how useful my ranking was, especially after she moved some things around to suit her own priorities.</p>
+    <p>I think that's a great idea, so this year, I've provided this <strong>Choose Your Own Voter Guide</strong>. You can click and drag the candidates' portraits up and down to re-arrange their position in the list. I'll tell you my opinions, and a couple of reasons why your ranking might differ. Once you've arranged the candidates to your liking, printing this page will hide the descriptions and give you a one-page voter's guide that you can bring with you into the voting booth.</p>
+  </div>
 
   <div id="listWithHandle" class="list-group">
     <div class="list-group-item row" id="mcgovern">
@@ -280,7 +315,7 @@
       <div class="col-xs-8 desc">
         <h2>Jan Devereux</h2>
 
-        <p>A blank slate for the CRA to write on. Nobody knows what she really stands for besides an abundance of caution on new development, down to wanting to halt sidewalk repair because the sidewalk was slightly the wrong color. Some have noticed that her campaign contributions seem to come from very rich Cambridge residents, and on top of that the Cambridge Residents' Alliance sends out campaign materials on her behalf. You will see her campaign signs on lovely houses that you could not afford in your wildest dreams.</p>
+        <p>A blank slate for the CRA to write on. Nobody seems to know what she really stands for besides an abundance of caution on new development, down to wanting to halt sidewalk repair because the sidewalk was slightly the wrong color. Some have noticed that her campaign contributions seem to come from very rich Cambridge residents, and on top of that the Cambridge Residents' Alliance sends out campaign materials on her behalf. You will see her campaign signs on lovely houses that you could not afford in your wildest dreams.</p>
 
         <p>She gets this spot on my ranking at all because, despite that I disagree with her on her key issue, she seems to be reasonably friendly and sane.</p>
 
@@ -359,22 +394,30 @@
 
   </div> <!-- end of candidate list -->
 
-  <h2>Who not to vote for</h2>
-  <p>I've made a ranking above of every candidate I could conceive of an informed voter supporting, even taking into account differing views on certain issues. The candidates who remain are candidates that no one should support under any circumstances.</p>
+  <div class="nope col-sm-10 col-sm-offset-1">
+    <h2>Who not to vote for</h2>
+    <p>I've made a ranking above of every candidate I could conceive of supporting, even taking into account differing views on certain issues. The candidates who remain are candidates that no one should support under any circumstances.</p>
 
-  <p><strong>Nadeem Mazen</strong> is a shameless liar, a narcissist, and a disruptive force who is the root cause of the current divisiveness of Cambridge politics. This should be illustrative: At the end of the Cambridge Economic Opportunity Committee forum, he declared to everyone's disbelief that <em>he himself</em> is poor. This is a man who owns two businesses and gets paid a City Council salary on top of that. He has so much excess money that he brags about giving away a third of his salary to a "community organization" that sounds a lot like his campaign. I could go on for much longer, but don't just take my word for it: I recommend reading <a href="https://www.reddit.com/r/CambridgeMA/comments/3qbu0u/cambridge_elections_what_are_the_candidates/cwf16ml?context=3">this post</a> by iriscamby, a former Mazen supporter.</p>
+    <p><strong>Nadeem Mazen</strong> is a shameless liar, a narcissist, and a disruptive force who is the root cause of the current divisiveness of Cambridge politics. This should be illustrative: At the end of the Cambridge Economic Opportunity Committee forum, he declared to everyone's disbelief that <em>he himself</em> is poor. This is a man who owns two businesses and gets paid a City Council salary on top of that. He has so much excess money that he brags about giving away a third of his salary to a "community organization" that sounds a lot like his campaign. I could go on for much longer, but don't just take my word for it: I recommend reading <a href="https://www.reddit.com/r/CambridgeMA/comments/3qbu0u/cambridge_elections_what_are_the_candidates/cwf16ml?context=3">this post</a> by iriscamby, a former Mazen supporter.</p>
 
-  <p><strong>Romaine Waite</strong> is an unquestioning supporter of Nadeem Mazen. He has barely any platform of his own and is just going to transfer most of his votes to Mazen.</p>
+    <p><strong>Romaine Waite</strong> is an unquestioning supporter of Nadeem Mazen. He has barely any platform of his own and is just going to transfer most of his votes to Mazen.</p>
 
-  <p><strong>Plineo DeGoes</strong> wants to solve the housing crunch by inviting homeless people to the city. He doesn't want to give them homes -- he in fact wants a moratorium on construction. He just wants them around to make the city less desirable. Seriously, here's exactly what he wrote in his ABC questionnaire response: "<a href="https://d3n8a8pro7vhmx.cloudfront.net/abettercambridge/pages/138/attachments/original/1444271569/Candidate_full_responses_to_publish.pdf?1444271569">Provide more services to the homeless in order to attract them to the city (which will decrease property values)</a>"</p>
+    <p><strong>Plineo DeGoes</strong> wants to solve the housing crunch by inviting homeless people to the city. He doesn't want to give them homes -- he in fact wants a moratorium on construction. He just wants them around to make the city less desirable. Seriously, here's exactly what he wrote in his ABC questionnaire response: "<a href="https://d3n8a8pro7vhmx.cloudfront.net/abettercambridge/pages/138/attachments/original/1444271569/Candidate_full_responses_to_publish.pdf?1444271569">Provide more services to the homeless in order to attract them to the city (which will decrease property values)</a>"</p>
 
-  <p><strong>Ilan Levy</strong> wants to destroy the unique form of government that makes this ranking possible, and replace it with plurality voting. Like in Boston, where most city council candidates run unopposed.</p>
+    <p><strong>Ilan Levy</strong> wants to destroy the unique form of government that makes this ranking possible, and replace it with plurality voting. Like in Boston, where most city council candidates run unopposed.</p>
 
-  <p><strong>Gary Mello</strong> wants to cut funding to public schools.</p>
+    <p><strong>Gary Mello</strong> wants to cut funding to public schools.</p>
 
-  <p><strong>James Williamson</strong> is unhinged. At candidate forum events, he is so badly behaved that the audience ends up booing him. At the CEOC debate, he accused the moderator -- a volunteer who fights poverty -- of being a "bully" and a shill for other candidates' campaigns, because she wouldn't let him give a completely off-topic statement.</p>
+    <p><strong>James Williamson</strong> is unhinged. At candidate forum events, he is so badly behaved that the audience ends up booing him. At the CEOC debate, he accused the moderator -- a volunteer who fights poverty -- of being a "bully" and a shill for other candidates' campaigns, because she wouldn't let him give a completely off-topic statement.</p>
 
-  <p><strong>Kim Courtney and Xavier Dietrich</strong> ran for City Council as a way of drawing attention to a legal struggle they were having trying to open a wine bar. Now that they've won that legal battle, I hoped they were done campaigning. But their next target is Uber. They don't just want to regulate it like the state does, they want to ban it outright. If you're one of the very few people who owns a Cambridge taxi medallion and also lives in Cambridge, I can see why you'd support them. Everyone else should stay away.</p>
+    <p><strong>Kim Courtney and Xavier Dietrich</strong> ran for City Council as a way of drawing attention to a legal struggle they were having trying to open a wine bar. Now that they've won that legal battle, I hoped they were done campaigning. But their next target is Uber. They don't just want to regulate it like the state does, they want to ban it outright. If you're one of the very few people who owns a Cambridge taxi medallion and also lives in Cambridge, I can see why you'd support them. Everyone else should stay away.</p>
+  </div>
+  <div class="footer col-sm-10 col-sm-offset-1">
+    <h2>Thanks</h2>
+    <p>Thanks to <a href="http://www.abettercambridge.org/">A Better Cambridge</a> for publishing their own very useful voter guide, and to Robert Winters and the <a href="http://cambridgecivic.com/">Cambridge Civic Journal</a> for collecting so much information about the candidates.</p>
+    <p>I am currently shamelessly hot-linking candidate images from the Cambridge Civic Journal because I'm in a hurry to put this page up. I will host the images myself when I have the time to make the change.</p>
+    <p>This page is released under a Creative Commons Attribution (CC-By) 4.0 license. If you want to remix it into your own version, go right ahead, just mention that I made it. The page code is <a href="http://github.com/rspeer/cambridgevoter">on GitHub</a>.</p>
+  </div>
 </div>
 
 <script id="jsbin-javascript">
