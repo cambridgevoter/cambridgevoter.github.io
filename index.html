@@ -61,8 +61,16 @@
   .rank {
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
+    color: #225;
+  }
+
+  .your-rank {
+    text-align: center;
+    font-weight: bold;
     font-size: 30px;
     color: #225;
+    display: none; /* until I make this work */
   }
 
   .desc h2 {
@@ -116,7 +124,7 @@
 
     </div>
     <div class="col-xs-2">
-      <a href="https://www.cambridgema.gov/~/media/483A54C6BC8546F8AD407D87FACFFC5E.ashx">
+      <a href="https://www.cambridgema.gov/~/media/Files/electioncommission/2017municipalelection/cityspecimenforweb.pdf?la=en">
         <img src="images/sample-ballot.png" alt="Sample ballot" style="width: 100%">
       </a>
       <p>Sample ballot</p>
@@ -125,11 +133,12 @@
 
   <div id="listWithHandle" class="list-group">
     <div class="list-group-item row" id="musgrave">
+      <div class="col-xs-1 your-rank">#1</div>
       <div class="col-xs-2 candidate-image">
         <img src="images/musgrave.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Adriane Musgrave</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/musgrave.htm">Adriane Musgrave</a></h2>
         
         <p>Adriane is an extremely competent and informed advocate for housing. Any question thrown at her in the debates that I went to, she had a good, informed answer, backed up by data. Also just a positive and friendly person. I believe that she will be a good representative of all of Cambridge, but especially of renters and people facing housing insecurity.</p>
       </div>
@@ -139,14 +148,15 @@
       </div>
     </div>
 
-    <div class="list-group-item row" id="mallon">
+    <div class="list-group-item row" id="tierney">
+      <div class="col-xs-1 your-rank">#2</div>
       <div class="col-xs-2 candidate-image">
-        <img src="images/mallon.jpg">
+        <img src="images/tierney.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Alanna Mallon</h2>
-
-        <p>Alanna is a strong advocate of housing, and also of educational opportunities for low-income children. She runs the Weekend Backpack Program, providing good food when school is out, and as the education liaison in City Hall, she worked to create scholarships for academic summer programs.</p>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/tierney.htm">Sean Tierney</a></h2>
+        <p>Sean is packed with detailed and workable proposals for increasing transit-oriented density while fighting displacement. He has a <a href="https://www.seantierney.org/housing-plan">very specific housing plan</a> on his website, with headings like "Let’s Use Chapter 40R, The State’s Smart Growth Zoning And Housing Production Statute, To Develop Sustainable, Multi-Use Neighborhoods At Alewife And Vail Court".</p>
+        <p>You can tell that Sean's policies are not just vague principles, but that he's really thought about how to improve the city, a lot.</p>
       </div>
       <div class="col-xs-2">
         <div class="rank-caption">Rob's rank:</div>
@@ -154,13 +164,15 @@
       </div>
     </div>
 
-    <div class="list-group-item row" id="gebru">
+    <div class="list-group-item row" id="mallon">
+      <div class="col-xs-1 your-rank">#3</div>
       <div class="col-xs-2 candidate-image">
-        <img src="images/gebru.jpg">
+        <img src="images/mallon.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Samuel Gebru</h2>
-        <p>Samuel Gebru focuses on economic justice, and a step toward his goals is more mixed-income housing. He's proposed fees for vacant and underutilized housing, which from what I've heard are having roughly the intended effect in cities where they've been tried such as Vancouver. He also advocates public financing of elections, which I think would be good for Cambridge. Some other candidates that advocate public elections make it their main issue and a distraction from policy, but Samuel puts policy first.</p>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/mallon.htm">Alanna Mallon</a></h2>
+
+        <p>Alanna is a strong advocate of housing, and also of educational opportunities for low-income children. She runs the Weekend Backpack Program, providing good food when school is out, and as the education liaison in City Hall, she worked to create scholarships for academic summer programs.</p>
       </div>
       <div class="col-xs-2">
         <div class="rank-caption">Rob's rank:</div>
@@ -168,15 +180,14 @@
       </div>
     </div>
 
-    <div class="list-group-item row" id="tierney">
+    <div class="list-group-item row" id="gebru">
+      <div class="col-xs-1 your-rank">#4</div>
       <div class="col-xs-2 candidate-image">
-        <img src="images/tierney.jpg">
+        <img src="images/gebru.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Sean Tierney</h2>
-        <p>We have so many new candidates with good ideas for how to address the housing crisis, it's hard to choose between them. Sean is packed with detailed and workable proposals for increasing transit-oriented density while fighting displacement.</p>
-        <p>I kind of have to arbitrarily choose to rank him below similar candidates, and the silly thing that I find a bit off-putting about Sean is that he keeps bringing up the CRLS football team where he volunteers. And when he does so, he says "Whatever you think about football, I probably agree with it". Which is such an empty politiciany thing to say.</p>
-        <p>But that's not a big deal. When I first picked up one of Sean Tierney's flyers, I could tell that his policies represent me. And this is true for everyone I rank above him too.</p>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/gebru.htm">Samuel Gebru</a></h2>
+        <p>Samuel Gebru focuses on economic justice, and a step toward his goals is more mixed-income housing. He's proposed fees for vacant and underutilized housing, which from what I've heard are having roughly the intended effect in cities where they've been tried such as Vancouver. He also advocates public financing of elections, which I think would be good for Cambridge. Some other candidates that advocate public elections make it their main issue and a distraction from policy, but Samuel puts policy first.</p>
       </div>
       <div class="col-xs-2">
         <div class="rank-caption">Rob's rank:</div>
@@ -185,11 +196,12 @@
     </div>
 
     <div class="list-group-item row" id="kelley">
+      <div class="col-xs-1 your-rank">#5</div>
       <div class="col-xs-2 candidate-image">
         <img src="images/kelley.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Craig Kelley</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/kelley.htm">Craig Kelley</a></h2>
         <p>Craig Kelley is our strongest advocate for the environment. This is not to say that the other candidates are bad for the environment. But Craig Kelley stands out here.</p>
         <p>He consistently gets endorsements from the Sierra Club, he used to volunteer for Greenpeace, he took the lead on banning plastic bags, and he promotes car-free transportation, especially infrastructure for bikes.</p>
         <p>He actually has an idiosyncratic position on bike lanes -- his view is that bike lanes alongside traffic get bicyclists killed, and if the bike lane can't be entirely separate, bikes should be in the flow of traffic instead. So you might see him surprisingly advocating against bike lanes sometimes.</p>
@@ -202,11 +214,12 @@
     </div>
 
     <div class="list-group-item row" id="simmons">
+      <div class="col-xs-1 your-rank">#6</div>
       <div class="col-xs-2 candidate-image">
         <img src="images/simmons.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Denise Simmons</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/simmons.htm">Denise Simmons</a></h2>
         <p>Denise Simmons has been a great representative of Cambridge and a great mayor. In Cambridge, the mayor has only slightly more power than any other council member; what's more important is that they bring people together, and represent the spirit of the city on issues that are larger than us. Denise has done this well in her terms as mayor, including her previous term when she became the first openly-lesbian mayor in the US.</p>
         <p>Simmons spends some of her time on a constituency who can't vote for her, because they don't live here, yet. She helps low-income people navigate the affordable-housing waitlist process, including guides written in Haitian Creole, so that not all the subsidies go to people who are well-connected and proficient in English.</p>
         <p>In general, a Cambridge where Denise Simmons doesn't get re-elected is a Cambridge I don't recognize. There are other candidates I find more exciting, but I think she has done well and deserves to stay on the council.</p>
@@ -218,11 +231,12 @@
     </div>
 
     <div class="list-group-item row" id="mcgovern">
+      <div class="col-xs-1 your-rank">#7</div>
       <div class="col-xs-2 candidate-image">
         <img src="images/mcgovern.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Marc McGovern</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/mcgovern.htm">Marc McGovern</a></h2>
         <p>Marc is a housing advocate, a fighter against poverty, and a policy wonk. Last election, I liked enough of what he had to say that I ranked him #1.</p>
         <p>What changed? Just one thing: within the past two years, there was a petition to downzone most of Riverside. This is a neighborhood where it's illegal to build a house like the houses that are already there, or to add so much as a shed to your house, and the petition was to make it even more illegal. I went to City Hall to oppose that petition and was very surprised to find Marc speaking for the supporting side.</p>
         <p>This was very surprising, given everything I've heard him say in favor of density. Is it different when it comes to his neighborhood? Was he coerced into it by his supporters? I don't know, but it makes me support him less, even though I still agree strongly with his policy positions.</p>
@@ -233,16 +247,15 @@
       </div>
     </div>
 
-    <div class="list-group-item row" id="siddiqui">
+    <div class="list-group-item row" id="toner">
+      <div class="col-xs-1 your-rank">#8</div>
       <div class="col-xs-2 candidate-image">
-        <img src="images/siddiqui.jpg">
+        <img src="images/toner.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Sumbul Siddiqui</h2>
-        <p>Somehow, Sumbul Siddiqui managed to get a respectable score (though short of an endorsement) from the pro-housing A Better Cambridge, while also getting an endorsement from the anti-housing Cambridge Residents' Alliance / Our Revolution. That's kind of amazing.</p>
-        <p>This could mean one of two things: either she's a uniter who everyone likes, who will bring people together and find compromise; or she's just a politician talking out of both sides of her mouth.</p>
-        <p>So far I'm inclined to believe the first, though. I've heard her speak at all the candidate events I went to. I've found the things she said generally agreeable, and her credentials as a Cambridge native who grew up in public schools and subsidized housing give her a lot of credibility.</p>
-        <p>In her policies, she's a little bit focused on homeownership and single-family homes -- though she also mentions triple-deckers, which we need more of and are generally not allowed by our current zoning. And she explicitly mentions the most important place to build new, denser housing: near transit and workplaces. Outside of these areas, I worry that her affordable-housing plans sound like mere juggling of tax incentives, which won't work for long, but her motivations are fine.</p>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/toner.htm">Paul Toner</a></h2>
+        <p>I haven't seen a lot of Paul Toner in this campaign. I see he's been collecting a bunch of union endorsements and yard signs and stuff, but I have to go look him up on the Web to see what he stands for: representing retirees, partnering with education and industry to help local students prosper, and a "regional approach" to housing and transportation issues.</p>
+        <p>He does say the magic words, which are that we can't just subsidize our way out of the housing crisis. I'm not sure what exactly is going to be different about his regional approach -- what makes him uniquely qualified to negotiate with Boston and Somerville? This is a task that past councillors have found very difficult.</p>
       </div>
       <div class="col-xs-2">
         <div class="rank-caption">Rob's rank:</div>
@@ -250,15 +263,17 @@
       </div>
     </div>
 
-    <div class="list-group-item row" id="toner">
+    <div class="list-group-item row" id="siddiqui">
+      <div class="col-xs-1 your-rank">#9</div>
       <div class="col-xs-2 candidate-image">
-        <img src="images/toner.jpg">
+        <img src="images/siddiqui.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Paul Toner</h2>
-        <p>I haven't seen a lot of Paul Toner in this campaign. I see he's been collecting a bunch of union endorsements and yard signs and stuff, but I have to go look him up on the Web to see what he stands for: representing retirees, partnering with education and industry to help local students prosper, and a "regional approach" to housing and transportation issues.</p>
-        <p>He does say the magic words, which are that we can't just subsidize our way out of the housing crisis. I'm not sure what exactly is going to be different about his regional approach -- what makes him uniquely qualified to negotiate with Boston and Somerville? This is a task that past councillors have found very difficult.</p>
-        <p>Basically, Paul Toner sounds fine but I don't know much about him.</p>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/siddiqui.htm">Sumbul Siddiqui</a></h2>
+        <p>Somehow, Sumbul Siddiqui managed to get a respectable score (though short of an endorsement) from the pro-housing A Better Cambridge, while also getting an endorsement from the anti-housing Cambridge Residents' Alliance / Our Revolution. That's kind of amazing.</p>
+        <p>This could mean one of two things: either she's a uniter who everyone likes, who will bring people together and find compromise; or she's just a politician talking out of both sides of her mouth.</p>
+        <p>So far I'm inclined to believe the first, though. I've heard her speak at all the candidate events I went to. I've found the things she said generally agreeable, and her credentials as a Cambridge native who grew up in public schools and subsidized housing give her a lot of credibility.</p>
+        <p>In her policies, she's a little bit focused on homeownership and single-family homes -- though she also mentions triple-deckers, which we need more of and are generally not allowed by our current zoning. And she explicitly mentions the most important place to build new, denser housing: near transit and workplaces. Outside of these areas, I worry that her affordable-housing plans sound like mere juggling of tax incentives, which won't work for long, but her motivations are fine.</p>
       </div>
       <div class="col-xs-2">
         <div class="rank-caption">Rob's rank:</div>
@@ -267,12 +282,13 @@
     </div>
 
     <div class="list-group-item row" id="toomey">
+      <div class="col-xs-1 your-rank">#10</div>
       <div class="col-xs-2 candidate-image">
         <img src="images/toomey.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Tim Toomey</h2>
-        <p>Tim Toomey used to have two elected positions, as a state representative and a city councillor, a situation I considered not quite reasonable. He lost the state rep position in 2016 to Mike Connolly, and I'd say it's because of his massive blunder of opposing marijuana legalization.</p>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/toomey.htm">Tim Toomey</a></h2>
+        <p>Tim Toomey used to have two elected positions, as a state representative and a city councillor, a situation I considered not quite reasonable. He lost the state rep position in 2016 to Mike Connolly, and I'd say it's because of his massive blunder of opposing marijuana legalization while the public was passing a referendum in favor of it.</p>
         <p>Aside from that, he seems fine, just a little bit bland. His big issue right now is creating affordable housing in space that's becoming available near Harvard Square, for which he says he withstands "unprecedented attacks" from the neighbors. I'm glad he's standing up for that issue. But I can't get excited about Tim Toomey. It seems like if you needed to point a finger at the Establishment, it's basically him.</p>
       </div>
       <div class="col-xs-2">
@@ -283,38 +299,43 @@
 
   </div> <!-- end of candidate list -->
 
-  <div id="listWithHandle2" class="nope">
+  <div class="nope">
     <div class="row">
       <h2>Other candidates</h2>
       <p>You can drag candidates below here to make them not appear in your printed guide. The candidates here are candidates I don't support, but you can drag them up into the above ranking if you disagree.</p>
     </div>
+  </div>
 
-    <div class="list-group-item row" id="benjamin">
-      <div class="col-xs-2 candidate-image">
-        <img src="images/benjamin.jpg">
-      </div>
-      <div class="col-xs-8 desc">
-        <h2>Ron Benjamin</h2>
-        <p>I don't think Ron Benjamin is asking for my vote. The only event I saw him show up to was the Cambridge Economic Opportunity Commission one, and the things he said there were all just vague identity politics, no specific policy positions. "You in North Cambridge know what I'm talking about". Maybe they do. Anyway, it's proportional representation; if enough people know what he's talking about, they'll get him a seat.</p>
-      </div>
-    </div>
-
+  <div id="listWithHandle2">
     <div class="list-group-item row" id="carlone">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/carlone.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Dennis Carlone</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/carlone.htm">Dennis Carlone</a></h2>
         <p>It is to Carlone's credit that his actions in office are not as bad as his campaign. I've seen his fear-mongering campaign flyers and heard his nasty robo-calls for several elections. And then in office he's just meh. He has a vision for Cambridge that he's competently working on. It's not my vision for Cambridge, but he's not just trying to be a wrench in the works, which is to his credit compared to some other CRA candidates.</p>
       </div>
     </div>
 
+    <div class="list-group-item row" id="benjamin">
+      <div class="col-xs-1 your-rank"></div>
+      <div class="col-xs-2 candidate-image">
+        <img src="images/benjamin.jpg">
+      </div>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/benjamin.htm">Ron Benjamin</a></h2>
+        <p>I don't think Ron Benjamin is asking for my vote. The only event I saw him show up to was the Cambridge Economic Opportunity Commission one, and the things he said there were all just vague identity politics, no specific policy positions. "You in North Cambridge know what I'm talking about". Maybe they do. Anyway, it's proportional representation; if enough people know what he's talking about, they'll get him a seat.</p>
+      </div>
+    </div>
+
     <div class="list-group-item row" id="harding">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/harding.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Richard Harding</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/harding.htm">Richard Harding</a></h2>
         <p>Richard didn't respond to the ABC questionnaire and I don't know enough about his positions from other sources, but I see he's already talking about raising the inclusionary housing requirement to 25%. Why not keep going until we end up as the Bay Area where people chant "100% affordable or none at all!" and get none at all?</p>
         <p>The purpose of the inclusionary zoning requirement is to get affordable housing whose subsidies are already paid for. 20% appears to be a workable percentage. The more you raise the percentage, the more insanely expensive the market rate has to be to pay for the affordable housing.</p>
         <p>That said, apparently he was reasonably well-liked on the School Committee, and he's not a CRA-endorsed candidate, which counts for something.</p>
@@ -322,89 +343,97 @@
     </div>
 
     <div class="list-group-item row" id="dambrosio">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/dambrosio.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Olivia D'Ambrosio</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/dambrosio.htm">Olivia D'Ambrosio</a></h2>
         <p>Olivia D'Ambrosio wants to be our "arts councillor", even though that is not a thing and there's no particular reason for that to be a thing. She has no platform beyond this.</p><p>The city can support the arts without using up a seat on the City Council for it, and I fail to see what the benefit would be of her sitting in City Hall instead of directing a show or something.</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="sivongxay">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/sivongxay.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Vatsady Sivongxay</h2>
-        <p>A generic Cambridge Residents' Alliance candidate who hasn't taken much of a stand on anything. We could do worse, but we could also do much better.</p>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/sivongxay.htm">Vatsady Sivongxay</a></h2>
+        <p>She hasn't taken much of a stand on anything. She will advocate for people and support people, yada yada. She wants stable and affordable housing but has no real proposal for how to get them, and her endorsement by the CRA indicates that she may not really be interested in creating housing at all.</p><p>We could do worse, but we could also do much better.</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="burgin">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/burgin.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Josh Burgin</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/burgin.htm">Josh Burgin</a></h2>
         <p>Who?</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="volmar">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/volmar.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Gwen Volmar</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/volmar.htm">Gwen Volmar</a></h2>
         <p>I was almost on board with the things Gwen Volmar was saying, but I don't really trust her. She does the kind of politics that involves getting really mad about things, and it turns out some of those things aren't real.</p><p>There was a policy she was railing against at the ABC forum that she says is a massive loophole in inclusionary zoning, where developers get to build the expensive units in one place and the affordable units in a separate location that's marginalized and undesirable. That would very much defeat the purpose of inclusionary zoning and would be something to get mad about, if it were true, but it isn't. After corrections, she kind of backed off and said it's something that happens in other cities and could happen here.</p>
         <p>She was also taking up the mantle of being a representative of low-income residents, but, here's the thing. She's an academic. She is low-income as a lifestyle choice. I appreciate people who pursue academia and I recognize how badly underpaid they are, but her take on class struggle sounds pretty inauthentic to me.</p>
         <p>As a commenter on Reddit pointed out when I started to be swayed by what she said in a forum, "She just makes things up."</p>
       </div>
     </div>
 
-    <div class="list-group-item row" id="volmar">
+    <div class="list-group-item row" id="pillai">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/pillai.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Hari Pillai</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/pillai.htm">Hari Pillai</a></h2>
         <p>A friendly enough guy, but he seems to have bombed on the ABC questionnaire with an incoherent plan that's more about blaming people than creating housing. He's straight up against the Volpe development, which after all this time has arrived at a compromise with something for everyone. He's got some good policies like municipal broadband, but that's the kind of thing that's easy to talk about and easy to sideline once you're actually in office.</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="devereux">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/devereux.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Jan Devereux</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/devereux.htm">Jan Devereux</a></h2>
 
-        <p>Jan Devereux represents a vision of Cambridge as a rich, homogeneous suburb, not as a diverse and thriving city. You will see her campaign signs on nice detached single-family houses with nice yards that you could not afford in your wildest dreams. In the previous election, she touted the fact that she once opposed a sidewalk repair because the concrete was the wrong color.</p>
+        <p>Jan Devereux represents a vision of Cambridge as a rich, homogeneous suburb, not as a diverse and thriving city. You will see her campaign signs on nice detached single-family houses with nice yards that you definitely can't afford. In the previous election, she touted the fact that she once opposed a sidewalk repair because the concrete was the wrong color.</p>
 
-        <p>If you want to see what her policies look like, look at West Cambridge, the richest, least dense, least racially diverse part of our city. It's like redlining never ended.</p>
+        <p>If you want to see what her policies look like, look at West Cambridge, the richest, least dense, least racially diverse part of our city.</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="okamoto">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/okamoto.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Nadya Okamoto</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/okamoto.htm">Nadya Okamoto</a></h2>
 
-        <p>Nadya Okamoto tells the story about how she escaped domestic violence and joined relatives in Cambridge, which became a safe, welcoming place for her. And now it's important to her that other people in her situation can f*** right off, because now that she's in it, Cambridge is full.</p>
+        <p>Nadya Okamoto tells the story about how she escaped domestic violence and joined relatives in Cambridge, which became a safe, welcoming place for her. And now it's important to her that other people in her situation can f*** right off, because  Cambridge is full now.</p>
 
-        <p>Am I caricaturing her a bit? She hasn't given me much else to go on. It seems like she wanted to put a City Council run on her resume, she looked around for a platform to campaign on, and CRA gave her one, even though it doesn't match her story at all.</p>
+        <p>Am I caricaturing her a bit much? She hasn't given us much else to go on. It seems like she wanted to put a City Council run on her resume, she looked around for a platform to campaign on, and CRA gave her one, even though it doesn't match her story at all. She's a young candidate failing to represent young voters. If so far she's only lived with relatives and then in a dorm, she may not have experienced the search for a place to live in Cambridge.</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="lenke">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/lenke.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Dan Lenke</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/lenke.htm">Dan Lenke</a></h2>
 
         <p>If I suspected anyone of being a poorly-programmed robot posing as a City Council candidate, it would be Dan Lenke. He strings together nice-sounding words without ever forming a relevant, meaningful sentence.</p>
         <p>I appreciate that he ran; everyone's been so serious about this election and we've been kind of running low on comic-relief candidates.</p>
@@ -412,52 +441,56 @@
     </div>
 
     <div class="list-group-item row" id="santos">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/santos.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Jeff Santos</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/santos.htm">Jeff Santos</a></h2>
 
-        <p>Talk show host who is running as a publicity stunt. He is strongly pro-car and thinks Cambridge should have more parking spaces. I guess this makes sense, because where else is anybody going to end up listening to a radio talk show?</p>
+        <p>Talk show host who is running as a publicity stunt. He is strongly pro-car and thinks Cambridge should have more parking spaces. I guess this makes sense, because where else does anyone else listen to a radio talk show?</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="moree">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/moree.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Gregg Moree</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/moree.htm">Gregg Moree</a></h2>
 
-        <p>Perennial, self-funded candidate. Talks about his uncle a lot as if we're supposed to be impressed.</p><p>This guy is messed up. He is not going to solve his problems by running for City Council. I don't understand where he even gets the signatures to get on the ballot every time.</p>
+        <p>Perennial candidate. Talks about his uncle who worked for FDR a lot, as if we're supposed to be impressed. The claim he repeats is "My uncle wrote the Second Bill of Rights", which refers to an FDR campaign prop with large-print words on it like "A Good Job", not exactly a defining document of our time.</p><p>This guy is messed up, frankly. He is not going to solve his problems by running for City Council. I don't understand where he even gets the signatures to get on the ballot every time.</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="zondervan">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/zondervan.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Quinton Zondervan</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/zondervan.htm">Quinton Zondervan</a></h2>
 
-        <p>A loud, populist, fake environmentalist. He advocates for low-density sprawl. It's as if he believes the environment is a bubble over Cambridge, and anyone pushed outside of the bubble doesn't affect the environment anymore. He touts alternatives to driving, but he supports policies that displace people to outlying towns where they have no alternative to driving.</p>
+        <p>A loud populist and a fake environmentalist. He advocates for low-density sprawl. It's as if he believes the environment is a bubble over Cambridge, and anyone pushed outside of the bubble doesn't affect the environment anymore. He touts alternatives to driving, but he supports policies that displace people to outlying towns where they have no alternative to driving.</p>
         <p>His solution to the housing shortage seems to be to shout at people until they lower the prices. "Just BUILD AFFORDABLE HOUSING", he tweets angrily while opposing all policies that would allow building affordable housing. He even opposes inclusionary zoning, as to him, 20% affordable is 80% evil.</p>
-        <p>He talks about his campaign as a part of "Our Revolution" and a way of fighting back against the Trump administration. In this elections, he's not running against the Trump administration. He's running against progressives.</p>
+        <p>He talks about his campaign as a part of "Our Revolution" and a way of fighting back against the Trump administration. In this election, he's not running against the Trump administration. He's running against progressives.</p>
       </div>
     </div>
 
     <div class="list-group-item row" id="levy">
+      <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
         <img src="images/levy.jpg">
       </div>
-      <div class="col-xs-8 desc">
-        <h2>Ilan Levy</h2>
+      <div class="col-xs-7 desc">
+        <h2><a href="http://vote.cambridgecivic.com/levy.htm">Ilan Levy</a></h2>
 
         <p>There are candidates I support and candidates I oppose, some of them strongly. But for all the other candidates, I can say that if they implemented their policies, there would still be a Cambridge. Not so with Ilan Levy.</p>
 
-        <p>He considers the entire city to be in a conspiracy against him and his neighborhood, and his solution is to start fights at community meetings (he proudly claims this in his campaign) and to propose to abolish the entire Plan E government. He wants to replace our ranked, proportional voting system with a system of districts and a directly-elected mayor, like in Boston, where most candidates run unopposed.</p>
+        <p>He considers the entire city to be in a conspiracy against him and his neighborhood, and his response is to start fights at community meetings (he proudly claimed this at a forum) and to propose to abolish the entire Plan E government. He wants to replace our ranked, proportional voting system with a system of districts and a directly-elected mayor, like in Boston, where most candidates run unopposed.</p>
 
-        <p>Cambridge's system of government is remarkably inclusive and effective. It lets us enact progressive policies while running a budget surplus and earning a AAA bond rating. Without it, there would be no reason for Cambridge to exist as a separate city.</p>
+        <p>Cambridge's system of government is remarkably inclusive and effective. It lets us enact progressive policies while running a budget surplus and earning a AAA bond rating. Our system of government has done well for us, and without it, we might as well get annexed by Boston.</p>
       </div>
     </div>
   </div>
