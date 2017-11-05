@@ -18,7 +18,17 @@
     width: 100%;
   }
 
-  .nope .candidate-image img {
+  .rank, .rank-caption {
+    /* it doesn't have to be all about my rank, let's de-clutter */
+    display: none;
+  }
+
+  .incumbent {
+    font-weight: bold;
+    color: #555;
+  }
+
+  #unrankedCandidateList .candidate-image img {
     width: 60%;
     margin-left: 20%;
   }
@@ -48,7 +58,11 @@
       display: none;
     }
 
-    .nope, .intro, .footer {
+    .hint {
+      display: none;
+    }
+
+    .nope, #unrankedCandidateList, .intro, .footer {
       display: none;
     }
   }
@@ -70,7 +84,12 @@
     font-weight: bold;
     font-size: 30px;
     color: #225;
-    display: none; /* until I make this work */
+  }
+
+  .hint {
+    font-size: 15px;
+    color: #888;
+    font-weight: normal;
   }
 
   .desc h2 {
@@ -90,6 +109,10 @@
     font-size: 40px;
     margin-top: 0;
   }
+
+  a[href]:after {
+    content: none !important;
+  }
   </style>
 </head>
 <body>
@@ -101,7 +124,7 @@
 
 <hgroup class="main-heading">
   <h2>Cambridge City Council 2017</h2>
-  <h1>Rob's Customizable Voter Guide</h1>
+  <h1>Customizable Voter Guide</h1>
   <h4>by <a href="http://twitter.com/r_speer/">Rob Speer</a></h4>
 </hgroup>
 
@@ -112,7 +135,6 @@
       <p>In 2013, one friend of mine told me how useful my ranking was, especially after she moved some candidates around to suit her own priorities.</p>
       <p>I think that's a great idea, so since 2015, I've provided this <strong>customizable voter guide</strong>. You can click and drag the candidates' portraits up and down to re-arrange their position in the list. I'll tell you my opinions, and a couple of reasons why your ranking might differ. (Remember that you can rank as many candidates as you like, and lower-ranked candidates on your ballot will not hurt the higher-ranked candidates.) Once you've arranged the candidates to your liking, printing this page will hide the descriptions and give you a one-page voter's guide that you can bring with you into the voting booth.</p>
       <p>Be sure to vote on <strong>Tuesday, November 7</strong> (that's really soon). This is important. The 2013 election was decided by a margin of 20 votes.</p>
-      <p><a href="https://www.cambridgema.gov/election/voterregistrationsearch">Check your voter registration and look up your polling place here</a>. If you're "inactive", that's okay, you can sign a form to become active again at the polling place.</p>
 
       <hr/>
 
@@ -131,9 +153,11 @@
     </div>
   </div>
 
-  <div id="listWithHandle" class="list-group">
+  <div id="rankedCandidateList" class="list-group">
     <div class="list-group-item row" id="musgrave">
-      <div class="col-xs-1 your-rank">#1</div>
+      <div class="col-xs-1 your-rank">
+        <p>#1</p><p class="hint">↕</p><p class="hint"><em>drag to reorder</em></p>
+      </div>
       <div class="col-xs-2 candidate-image">
         <img src="images/musgrave.jpg">
       </div>
@@ -202,6 +226,7 @@
       </div>
       <div class="col-xs-7 desc">
         <h2><a href="http://vote.cambridgecivic.com/kelley.htm">Craig Kelley</a></h2>
+        <p class="incumbent">Incumbent</p>
         <p>Craig Kelley is our strongest advocate for the environment. This is not to say that the other candidates are bad for the environment. But Craig Kelley stands out here.</p>
         <p>He consistently gets endorsements from the Sierra Club, he used to volunteer for Greenpeace, he took the lead on banning plastic bags, and he promotes car-free transportation, especially infrastructure for bikes.</p>
         <p>He actually has an idiosyncratic position on bike lanes -- his view is that bike lanes alongside traffic get bicyclists killed, and if the bike lane can't be entirely separate, bikes should be in the flow of traffic instead. So you might see him surprisingly advocating against bike lanes sometimes.</p>
@@ -220,6 +245,7 @@
       </div>
       <div class="col-xs-7 desc">
         <h2><a href="http://vote.cambridgecivic.com/simmons.htm">Denise Simmons</a></h2>
+        <p class="incumbent">Incumbent</p>
         <p>Denise Simmons has been a great representative of Cambridge and a great mayor. In Cambridge, the mayor has only slightly more power than any other council member; what's more important is that they bring people together, and represent the spirit of the city on issues that are larger than us. Denise has done this well in her terms as mayor, including her previous term when she became the first openly-lesbian mayor in the US.</p>
         <p>Simmons spends some of her time on a constituency who can't vote for her, because they don't live here, yet. She helps low-income people navigate the affordable-housing waitlist process, including guides written in Haitian Creole, so that not all the subsidies go to people who are well-connected and proficient in English.</p>
         <p>In general, a Cambridge where Denise Simmons doesn't get re-elected is a Cambridge I don't recognize. There are other candidates I find more exciting, but I think she has done well and deserves to stay on the council.</p>
@@ -237,6 +263,7 @@
       </div>
       <div class="col-xs-7 desc">
         <h2><a href="http://vote.cambridgecivic.com/mcgovern.htm">Marc McGovern</a></h2>
+        <p class="incumbent">Incumbent</p>
         <p>Marc is a housing advocate, a fighter against poverty, and a policy wonk. Last election, I liked enough of what he had to say that I ranked him #1.</p>
         <p>What changed? Just one thing: within the past two years, there was a petition to downzone most of Riverside. This is a neighborhood where it's illegal to build a house like the houses that are already there, or to add so much as a shed to your house, and the petition was to make it even more illegal. I went to City Hall to oppose that petition and was very surprised to find Marc speaking for the supporting side.</p>
         <p>This was very surprising, given everything I've heard him say in favor of density. Is it different when it comes to his neighborhood? Was he coerced into it by his supporters? I don't know, but it makes me support him less, even though I still agree strongly with his policy positions.</p>
@@ -288,6 +315,7 @@
       </div>
       <div class="col-xs-7 desc">
         <h2><a href="http://vote.cambridgecivic.com/toomey.htm">Tim Toomey</a></h2>
+        <p class="incumbent">Incumbent</p>
         <p>Tim Toomey used to have two elected positions, as a state representative and a city councillor, a situation I considered not quite reasonable. He lost the state rep position in 2016 to Mike Connolly, and I'd say it's because of his massive blunder of opposing marijuana legalization while the public was passing a referendum in favor of it.</p>
         <p>Aside from that, he seems fine, just a little bit bland. His big issue right now is creating affordable housing in space that's becoming available near Harvard Square, for which he says he withstands "unprecedented attacks" from the neighbors. I'm glad he's standing up for that issue. But I can't get excited about Tim Toomey. It seems like if you needed to point a finger at the Establishment, it's basically him.</p>
       </div>
@@ -306,7 +334,7 @@
     </div>
   </div>
 
-  <div id="listWithHandle2">
+  <div id="unrankedCandidateList">
     <div class="list-group-item row" id="carlone">
       <div class="col-xs-1 your-rank"></div>
       <div class="col-xs-2 candidate-image">
@@ -314,6 +342,7 @@
       </div>
       <div class="col-xs-7 desc">
         <h2><a href="http://vote.cambridgecivic.com/carlone.htm">Dennis Carlone</a></h2>
+        <p class="incumbent">Incumbent</p>
         <p>It is to Carlone's credit that his actions in office are not as bad as his campaign. I've seen his fear-mongering campaign flyers and heard his nasty robo-calls for several elections. And then in office he's just meh. He has a vision for Cambridge that he's competently working on. It's not my vision for Cambridge, but he's not just trying to be a wrench in the works, which is to his credit compared to some other CRA candidates.</p>
       </div>
     </div>
@@ -406,7 +435,8 @@
       </div>
       <div class="col-xs-7 desc">
         <h2><a href="http://vote.cambridgecivic.com/devereux.htm">Jan Devereux</a></h2>
-
+        <p class="incumbent">Incumbent</p>
+        
         <p>Jan Devereux represents a vision of Cambridge as a rich, homogeneous suburb, not as a diverse and thriving city. You will see her campaign signs on nice detached single-family houses with nice yards that you definitely can't afford. In the previous election, she touted the fact that she once opposed a sidewalk repair because the concrete was the wrong color.</p>
 
         <p>If you want to see what her policies look like, look at West Cambridge, the richest, least dense, least racially diverse part of our city.</p>
@@ -420,10 +450,11 @@
       </div>
       <div class="col-xs-7 desc">
         <h2><a href="http://vote.cambridgecivic.com/okamoto.htm">Nadya Okamoto</a></h2>
-
         <p>Nadya Okamoto tells the story about how she escaped domestic violence and joined relatives in Cambridge, which became a safe, welcoming place for her. And now it's important to her that other people in her situation can f*** right off, because  Cambridge is full now.</p>
 
-        <p>Am I caricaturing her a bit much? She hasn't given us much else to go on. It seems like she wanted to put a City Council run on her resume, she looked around for a platform to campaign on, and CRA gave her one, even though it doesn't match her story at all. She's a young candidate failing to represent young voters. If so far she's only lived with relatives and then in a dorm, she may not have experienced the search for a place to live in Cambridge.</p>
+        <p>Am I caricaturing her a bit much? She hasn't given us much else to go on. Her platform is pretty weak and reflects her lack of experience.</p>
+        
+        <p>It seems like she wanted to put a City Council run on her resume, she looked around for a platform to campaign on, and CRA gave her one, even though it doesn't match her story at all. She's a young candidate failing to represent young voters. If so far she's only lived with relatives and then in a dorm, she may not have experienced the search for a place to live in Cambridge.</p>
       </div>
     </div>
 
@@ -508,15 +539,39 @@
 
 <script id="jsbin-javascript">
 // List with handle
-Sortable.create(listWithHandle, {
-  handle: '.candidate-image',
+function handleMove(event) {
+  var list1 = document.getElementById("rankedCandidateList");
+  var subelements = list1.getElementsByClassName("list-group-item");
+  for (var i=0; i < subelements.length; i++) {
+    var rankElement = subelements[i].getElementsByClassName("your-rank")[0];
+    if (i == 0) {
+      rankElement.innerHTML = "<p>#1</p><p class=\"hint\">↕</p><p class=\"hint\"><em>drag to reorder</em></p>";
+    }
+    else {
+      rankElement.innerHTML = "#" + (i + 1);
+    }
+  }
+
+  var list2 = document.getElementById("unrankedCandidateList");
+  var subelements = list2.getElementsByClassName("list-group-item");
+  for (var i=0; i < subelements.length; i++) {
+    var rankElement = subelements[i].getElementsByClassName("your-rank")[0];
+    rankElement.innerHTML = "";
+  }
+  return true;
+}
+
+Sortable.create(rankedCandidateList, {
+  /* handle: '.candidate-image', */
   group: 'all',
-  animation: 150
+  animation: 150,
+  onEnd: handleMove
 });
-Sortable.create(listWithHandle2, {
-  handle: '.candidate-image',
+Sortable.create(unrankedCandidateList, {
+  /* handle: '.candidate-image', */
   group: 'all',
-  animation: 150
+  animation: 150,
+  onEnd: handleMove
 });
 </script>
 
